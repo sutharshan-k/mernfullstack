@@ -1,0 +1,25 @@
+#table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 5px solid #ccc;
+    padding: 10px 1px;
+    text-align: left;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 220;
+    text-align: left;
+    text-decoration:solid 10px;
+    color:black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+li{
+    display: block;
+}
