@@ -17,10 +17,16 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
+        h1.title {
+            text-align: center;
+            border: 3px solid black;
+            color: black;
+            padding: 10px;
+        }
+
         .container {
-            display: flex;
-            flex-direction: column;
             gap: 30px;
+            padding: 20px;
         }
 
         .player-card {
@@ -29,16 +35,18 @@
             padding: 15px;
             display: flex;
             gap: 20px;
-            position: sticky;
-            top: 10px;
             align-items: flex-start;
-            z-index: 1;
+            flex-direction: column;
         }
 
-        img {
+        .player-card img {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             border-radius: 10px;
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
         }
 
         .player-info {
@@ -48,11 +56,18 @@
         pre {
             font-size: medium;
             text-align: justify;
+            white-space: pre-wrap;
+        }
+
+        @media (min-width: 600px) {
+            .player-card {
+                flex-direction: row;
+            }
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;border:3px solid black;color:black;"><strong>Greatest of All Time - Batters</strong></h1>
+    <h1 class="title"><strong>Greatest of All Time - Batters</strong></h1>
 
     <div class="container">
 
@@ -97,7 +112,7 @@
         </div>
 
         <div class="player-card">
-            <img src="images/kallis.jpeg" alt="Jacques Kallis" width="300" height="300">
+            <img src="images/kallis.jpeg" alt="Jacques Kallis">
             <div class="player-info">
                 <h1>No.5: Jacques Kallis</h1>
                 <h2>Debut: 1995</h2>
