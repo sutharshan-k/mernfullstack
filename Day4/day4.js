@@ -41,7 +41,7 @@ dom.style.color="red";
 dom.innerText="Hello World";
 
 let newElement=document.createElement("h1");
-newElement.innerText="rithi";
+newElement.innerText="john";
 dom.appendChild(newElement);
 setTimeout(()=>{
     dom.removeChild(newElement);},1000);
