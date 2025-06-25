@@ -1,0 +1,51 @@
+use KEC
+switched to db KEC
+db.createCollection("sutharshank")
+{ ok: 1 }
+db.sutharshank.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b70edc57db222edd4a04a')
+}
+db.createCollection("sutharshank")
+db.sutharshank.insertOne({'name': 'Thiru', 'dept': 'EIE', 'age': 19, 'fees': 125000})
+db.sutharshank.insertOne({'name': 'Sutharshan', 'dept': 'EIE', 'age': 19, 'fees': 125000})
+db.sutharshank.insertOne({'name': 'Haries', 'dept': 'EIE', 'age': 19, 'fees': 125000})
+db.sutharshank.insertOne({'name': 'Sharan', 'dept': 'EIE', 'age': 19, 'fees': 125000})
+db.sutharshank.insertOne({'name': 'Sudhan', 'dept': 'EIE', 'age': 19, 'fees': 125000})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7203c57db222edd4a04f')
+}
+db.sutharshank.find()
+{
+  _id: ObjectId('685b70edc57db222edd4a04a')
+}
+{
+  _id: ObjectId('685b7203c57db222edd4a04b'),
+  name: 'Thiru',
+  dept: 'EIE',
+  age: 19,
+  fees: 125000
+}
+{
+  _id: ObjectId('685b7203c57db222edd4a04c'),
+  name: 'Sutharshan',
+  dept: 'EIE',
+  age: 19,
+  fees: 125000
+}
+{
+  _id: ObjectId('685b7203c57db222edd4a04d'),
+  name: 'Haries',
+  dept: 'EIE',
+  age: 19,
+  fees: 125000
+}
+{
+  _id: ObjectId('685b7203c57db222edd4a04e'),
+  name: 'Sharan',
+  dept: 'EIE',
+  age: 19,
+  fees: 125000
+}
